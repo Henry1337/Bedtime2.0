@@ -1,7 +1,20 @@
 <!DOCTYPE html>
-  
-<body> 
-    <script type="text/javascript"> 
+<html>
+<head>
+<title>Page Title</title>
+<style>
+body {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+
+<h1>
+<script type="text/javascript"> 
         var myDate = new Date(); 
         var myDay = myDate.getDay(); 
         
@@ -11,26 +24,21 @@
         ]; 
         document.write("Today is : " + weekday[myDay]); 
         document.write("<br/>"); 
-        
-        // get hour value. 
-        var hours = myDate.getHours(); 
-        var ampm = hours >= 12 ? 'PM' : 'AM'; 
-        hours = hours % 12; 
-        hours = hours ? hours : 12; 
-        var minutes = myDate.getMinutes(); 
-        minutes = minutes < 10 ? '0' + minutes : minutes; 
-        var myTime = hours + " " + ampm + " : " + minutes +  
-            " : " + myDate.getMilliseconds(); 
-        document.write("\tCurrent time is : " + myTime); 
          
     </script> 
-  <script type = "text/javascript">
-    var sec = 0;
+</h1>
+<p>
+<script type="text/javascript"> 
+ var sec = 0;
     function pad ( val ) { return val > 9 ? val : "0" + val; }
     setInterval( function(){
         document.getElementById("seconds").innerHTML=pad(++sec%60);
         document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
     }, 1000);
   </script>
-  <span id="minutes"></span>:<span id="seconds"></span>
-</body> 
+You have been sleeping for <span id="minutes"></span>:<span id="seconds"></span>
+</p>
+<img src="avatar.png" alt="Avatar" style="width:200px">
+
+</body>
+</html>
