@@ -1,0 +1,42 @@
+  
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+body {
+  background-color: black;
+  text-align: center;
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+
+<h1>
+Wakey Wakey
+
+
+</h1>
+<h2>
+<script type="text/javascript"> 
+        var myDate = new Date(); 
+        var myDay = myDate.getDay(); 
+        
+        // Array of days. 
+        var weekday = ['Sunday', 'Monday', 'Tuesday', 
+            'Wednesday', 'Thursday', 'Friday', 'Saturday' 
+        ]; 
+        document.write("Today is " + weekday[myDay]); 
+        document.write("<br/>"); 
+         
+    </script> 
+</h2>
+<p>
+
+</p>
+<img src="sunrise.jpq" alt="Sunrise" style="width:300px">
+
+</body>
+</html>
